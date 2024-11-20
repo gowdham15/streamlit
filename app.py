@@ -49,14 +49,6 @@ if user_guess.isdigit():
             st.snow()
         else:
             st.write("Try to guess it within 7 attempts !")
-            st.balloons()
-
-    # elif user_guess <= 0 or user_guess > 100:
-    #     st.session_state.lowest_number = st.session_state.lowest_number
-    #     st.session_state.highest_number = st.session_state.highest_number
-    #     st.write("OUT OF RANGE")
-    #     st.write(f"Please enter a number between {st.session_state.lowest_number} and {st.session_state.highest_number} both inclusive.")
-    #     st.button("NEXT GUESS")
     
     elif user_guess > st.session_state.answer:
         st.write("HIGH ! Go Lower.")
@@ -83,5 +75,3 @@ if st.button("RESTART GAME 🔁"):
     st.write("'Click 2 times to Restart the game. 🔁'")
 else:
     pass
-
-st.write("==================================================================================")
